@@ -13,7 +13,7 @@ bot = telebot.TeleBot(TOKEN) # Creamos el objeto de nuestro bot.
 def command_hora(m): # Definimos una función que resuelva lo que necesitemos.
     cid = m.chat.id # Guardamos el ID de la conversación para poder responder.
     bot.send_message( cid, time.strftime("%H:%M:%S")) # Con la función 'send_message()' del bot, enviamos al ID almacenado el texto que queremos.
-@bot.message_handler(commands=['prueba']) # Indicamos que lo siguiente va a controlar el comando '/miramacho'
+@bot.message_handler(commands=['prueba']) # Indicamos que lo siguiente va a controlar el comando '/prueba'
 def command_prueba(m): # Definimos una función que resuleva lo que necesitemos.
     cid = m.chat.id # Guardamos el ID de la conversación para poder responder.
     bot.send_message( cid, 'probando') # Con la función 'send_message()' del bot, enviamos al ID almacenado el texto que queremos.
